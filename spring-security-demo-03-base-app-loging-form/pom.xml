@@ -40,12 +40,20 @@
 			<version>${springsecurity.version}</version>
 		</dependency>
 
-		<!-- Servlet support, JSP and JSTL not needed
+		<!-- Servlet support, and JSP not needed
 		     and provided by the server-->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
+		</dependency>
+
+		<!-- Jstl in fact needed and not
+		     provided by the server (see error message in login form-->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 
 		<!-- to compensate for java 9+ not including jaxb -->
